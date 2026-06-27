@@ -71,9 +71,9 @@ print $'index\tname\tdatabasePageId\tdataSourceId\tdataSourceFile\tdatabaseFile'
 
 perl -0777 -ne '
   my $i = 0;
-  while (/<database\s+[^>]*url="https:\/\/www\.notion\.so\/([^"]+)"[^>]*data-source-url="collection:\/\/([^"]+)"[^>]*>([\s\S]*?)<\/database>/g) {
+  while (/<database\s+[^>]*url="[^"]*?([0-9a-fA-F]{32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})[^"]*"[^>]*data-source-url="collection:\/\/([^"]+)"[^>]*>([\s\S]*?)<\/database>/g) {
     my ($db, $ds, $name) = ($1, $2, $3);
-    $db =~ s/[?#\/].*$//;
+    $db =~ s/-//g;
     $name =~ s/<[^>]+>//g;
     $name =~ s/&amp;/&/g;
     $name =~ s/&lt;/</g;
@@ -81,6 +81,7 @@ perl -0777 -ne '
     $name =~ s/&quot;/"/g;
     $name =~ s/&#39;/'"'"'/g;
     $name =~ s/^\s+|\s+$//g;
+    $name = $db if $name eq "";
     next if $seen{$ds}++;
     $i++;
     print join("\t", $i, $name, $db, $ds), "\n";
@@ -93,6 +94,8 @@ perl -0777 -ne '
   echo "[$index] Reading $name"
   run_ntn_json "v1/data_sources/$data_source_id" "$RAW_DATA_SOURCES_DIR/$data_source_file"
   run_ntn_json "v1/databases/$database_page_id" "$RAW_DATABASES_DIR/$database_file"
+  ds_name="$(jq -r '(([.title[]?.plain_text] | add) // .name // "") | gsub("^\\s+|\\s+$";"")' "$RAW_DATA_SOURCES_DIR/$data_source_file" 2>/dev/null)"
+  [[ -n "$ds_name" && "$ds_name" != "null" ]] && name="$ds_name"
   print "$index\t$name\t$database_page_id\t$data_source_id\t$data_source_file\t$database_file" >> "$MANIFEST"
   echo "[$index] Done $name"
 done

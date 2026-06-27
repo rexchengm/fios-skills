@@ -85,10 +85,10 @@ function parseDatabaseEntries(markdown) {
   const entries = [];
   const seen = new Set();
   const databaseTag =
-    /<database\s+[^>]*url="https:\/\/www\.notion\.so\/([^"]+)"[^>]*data-source-url="collection:\/\/([^"]+)"[^>]*>([\s\S]*?)<\/database>/g;
+    /<database\s+[^>]*url="[^"]*?([0-9a-fA-F]{32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})[^"]*"[^>]*data-source-url="collection:\/\/([^"]+)"[^>]*>([\s\S]*?)<\/database>/g;
   let match;
   while ((match = databaseTag.exec(markdown)) !== null) {
-    const databasePageId = match[1].split(/[?#/]/)[0];
+    const databasePageId = match[1].replace(/-/g, "");
     const dataSourceId = match[2];
     const name = stripTags(match[3]);
     if (seen.has(dataSourceId)) continue;
