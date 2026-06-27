@@ -1,0 +1,2167 @@
+{
+  "fios": "FIOS Notion 生活系统 模板结构清单（脱敏版）",
+  "purpose": "供 notion-fios-init 在买家自己的 Notion 上按库名+directFill字段核对结构，识别真正的 FIOS 库。",
+  "privacy": "formula/relation/rollup/button/系统字段 已全部剔除，公式体与关联架构不外泄",
+  "databaseCount": 53,
+  "databases": [
+    {
+      "name": "旅游计划",
+      "domain": "旅游",
+      "directFieldCount": 12,
+      "fields": [
+        {
+          "name": "住宿类型",
+          "type": "multi_select"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "基本交通费用",
+          "type": "number"
+        },
+        {
+          "name": "天气情况",
+          "type": "select"
+        },
+        {
+          "name": "实际消费",
+          "type": "number"
+        },
+        {
+          "name": "旅行方式",
+          "type": "multi_select"
+        },
+        {
+          "name": "旅行日期",
+          "type": "date"
+        },
+        {
+          "name": "旅行状态",
+          "type": "status"
+        },
+        {
+          "name": "旅行预算",
+          "type": "number"
+        },
+        {
+          "name": "目的地",
+          "type": "select"
+        },
+        {
+          "name": "结束日期",
+          "type": "date"
+        },
+        {
+          "name": "酒店日均费用",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "景点选择",
+      "domain": "旅游",
+      "directFieldCount": 10,
+      "fields": [
+        {
+          "name": "Place",
+          "type": "place"
+        },
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "主观评分",
+          "type": "number"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "景区级别",
+          "type": "select"
+        },
+        {
+          "name": "特色",
+          "type": "rich_text"
+        },
+        {
+          "name": "用时",
+          "type": "number"
+        },
+        {
+          "name": "第几站(天）",
+          "type": "select"
+        },
+        {
+          "name": "类型",
+          "type": "select"
+        },
+        {
+          "name": "门票及其他费用",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "旅游地点",
+      "domain": "旅游",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "类别",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "社交信息",
+      "domain": "人际",
+      "directFieldCount": 18,
+      "fields": [
+        {
+          "name": "上次联系日期",
+          "type": "date"
+        },
+        {
+          "name": "下次联系间隔",
+          "type": "number"
+        },
+        {
+          "name": "人员状态",
+          "type": "status"
+        },
+        {
+          "name": "入帐状态",
+          "type": "status"
+        },
+        {
+          "name": "共同群聊",
+          "type": "status"
+        },
+        {
+          "name": "其他扣分",
+          "type": "number"
+        },
+        {
+          "name": "备注信息",
+          "type": "multi_select"
+        },
+        {
+          "name": "姓名",
+          "type": "title"
+        },
+        {
+          "name": "性格",
+          "type": "multi_select"
+        },
+        {
+          "name": "手机号",
+          "type": "rich_text"
+        },
+        {
+          "name": "扣分原因",
+          "type": "multi_select"
+        },
+        {
+          "name": "消息状态",
+          "type": "status"
+        },
+        {
+          "name": "添加微信",
+          "type": "status"
+        },
+        {
+          "name": "生日",
+          "type": "date"
+        },
+        {
+          "name": "社交平台私信",
+          "type": "multi_select"
+        },
+        {
+          "name": "经济金额",
+          "type": "number"
+        },
+        {
+          "name": "跟进记录",
+          "type": "rich_text"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "事项处理",
+      "domain": "人际",
+      "directFieldCount": 11,
+      "fields": [
+        {
+          "name": "事项描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "事项类别",
+          "type": "select"
+        },
+        {
+          "name": "优先级",
+          "type": "select"
+        },
+        {
+          "name": "具体事项",
+          "type": "title"
+        },
+        {
+          "name": "发生日期",
+          "type": "date"
+        },
+        {
+          "name": "处理方式",
+          "type": "multi_select"
+        },
+        {
+          "name": "备注",
+          "type": "select"
+        },
+        {
+          "name": "复盘要点",
+          "type": "multi_select"
+        },
+        {
+          "name": "完结日期",
+          "type": "date"
+        },
+        {
+          "name": "已处理",
+          "type": "checkbox"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        }
+      ]
+    },
+    {
+      "name": "关系分类",
+      "domain": "人际",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "电影视频",
+      "domain": "影视",
+      "directFieldCount": 15,
+      "fields": [
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "个人评分",
+          "type": "number"
+        },
+        {
+          "name": "关键标签",
+          "type": "multi_select"
+        },
+        {
+          "name": "剧集",
+          "type": "number"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "导演",
+          "type": "rich_text"
+        },
+        {
+          "name": "已看",
+          "type": "number"
+        },
+        {
+          "name": "影评状态",
+          "type": "status"
+        },
+        {
+          "name": "成长收获",
+          "type": "rich_text"
+        },
+        {
+          "name": "时长",
+          "type": "number"
+        },
+        {
+          "name": "来源平台",
+          "type": "select"
+        },
+        {
+          "name": "类型",
+          "type": "status"
+        },
+        {
+          "name": "观看日期",
+          "type": "date"
+        },
+        {
+          "name": "观看状态",
+          "type": "status"
+        },
+        {
+          "name": "计划日期",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "影视评论",
+      "domain": "影视",
+      "directFieldCount": 4,
+      "fields": [
+        {
+          "name": "创建时间",
+          "type": "date"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "网址",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "name": "影视分类",
+      "domain": "影视",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "类别",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "目标设定",
+      "domain": "规划",
+      "directFieldCount": 15,
+      "fields": [
+        {
+          "name": "奖励",
+          "type": "select"
+        },
+        {
+          "name": "实际完成日期",
+          "type": "date"
+        },
+        {
+          "name": "开始日期",
+          "type": "date"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "截止日期",
+          "type": "date"
+        },
+        {
+          "name": "截至日期",
+          "type": "date"
+        },
+        {
+          "name": "目标",
+          "type": "title"
+        },
+        {
+          "name": "目标开始日期",
+          "type": "date"
+        },
+        {
+          "name": "目标摘要",
+          "type": "rich_text"
+        },
+        {
+          "name": "规划描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "进度条长度",
+          "type": "select"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        },
+        {
+          "name": "预完成任务数 1",
+          "type": "number"
+        },
+        {
+          "name": "预完成项目数 1",
+          "type": "number"
+        },
+        {
+          "name": "预定规划数",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "规划设定",
+      "domain": "规划",
+      "directFieldCount": 10,
+      "fields": [
+        {
+          "name": "实际完成日期",
+          "type": "date"
+        },
+        {
+          "name": "开始日期",
+          "type": "date"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "截至日期",
+          "type": "date"
+        },
+        {
+          "name": "条件颜色",
+          "type": "select"
+        },
+        {
+          "name": "规划",
+          "type": "title"
+        },
+        {
+          "name": "规划描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "进度条长度",
+          "type": "select"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        },
+        {
+          "name": "预定项目数",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "项目执行",
+      "domain": "规划",
+      "directFieldCount": 12,
+      "fields": [
+        {
+          "name": "四象限法则",
+          "type": "select"
+        },
+        {
+          "name": "备注",
+          "type": "select"
+        },
+        {
+          "name": "实际完成日期",
+          "type": "date"
+        },
+        {
+          "name": "开始日期",
+          "type": "date"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "截至日期",
+          "type": "date"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        },
+        {
+          "name": "项目",
+          "type": "title"
+        },
+        {
+          "name": "项目描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "预定任务数",
+          "type": "number"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "任务执行",
+      "domain": "规划",
+      "directFieldCount": 12,
+      "fields": [
+        {
+          "name": "事项",
+          "type": "title"
+        },
+        {
+          "name": "事项描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "事项日期",
+          "type": "date"
+        },
+        {
+          "name": "任务四象限法则",
+          "type": "status"
+        },
+        {
+          "name": "任务时长(分钟)",
+          "type": "number"
+        },
+        {
+          "name": "备注",
+          "type": "select"
+        },
+        {
+          "name": "已完成",
+          "type": "checkbox"
+        },
+        {
+          "name": "延期计算",
+          "type": "number"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "谷歌ID",
+          "type": "rich_text"
+        },
+        {
+          "name": "负责人",
+          "type": "people"
+        },
+        {
+          "name": "重复计算",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "家人亲人",
+      "domain": "生活",
+      "directFieldCount": 4,
+      "fields": [
+        {
+          "name": "Name",
+          "type": "title"
+        },
+        {
+          "name": "上次联系日期",
+          "type": "date"
+        },
+        {
+          "name": "生日",
+          "type": "date"
+        },
+        {
+          "name": "联系方式",
+          "type": "rich_text"
+        }
+      ]
+    },
+    {
+      "name": "物品管理",
+      "domain": "生活",
+      "directFieldCount": 11,
+      "fields": [
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "价格(元）",
+          "type": "number"
+        },
+        {
+          "name": "保修时间（年）",
+          "type": "number"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "当前状态",
+          "type": "select"
+        },
+        {
+          "name": "用途",
+          "type": "multi_select"
+        },
+        {
+          "name": "破损日期",
+          "type": "date"
+        },
+        {
+          "name": "类别",
+          "type": "select"
+        },
+        {
+          "name": "维修记录",
+          "type": "rich_text"
+        },
+        {
+          "name": "财务状态",
+          "type": "status"
+        },
+        {
+          "name": "购买日期",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "固定收支",
+      "domain": "财务",
+      "directFieldCount": 6,
+      "fields": [
+        {
+          "name": "事项",
+          "type": "title"
+        },
+        {
+          "name": "单次金额",
+          "type": "number"
+        },
+        {
+          "name": "固定间隔",
+          "type": "select"
+        },
+        {
+          "name": "类型",
+          "type": "select"
+        },
+        {
+          "name": "结束日期",
+          "type": "date"
+        },
+        {
+          "name": "起始日期",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "资源收集",
+      "domain": "生活",
+      "directFieldCount": 11,
+      "fields": [
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "主要内容",
+          "type": "rich_text"
+        },
+        {
+          "name": "内容提取",
+          "type": "rich_text"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "备注日期",
+          "type": "date"
+        },
+        {
+          "name": "小红书标题",
+          "type": "rich_text"
+        },
+        {
+          "name": "来源",
+          "type": "status"
+        },
+        {
+          "name": "标签",
+          "type": "multi_select"
+        },
+        {
+          "name": "核心思想",
+          "type": "rich_text"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "选题类型",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "身体健康",
+      "domain": "健康",
+      "directFieldCount": 16,
+      "fields": [
+        {
+          "name": "体重（公斤）",
+          "type": "number"
+        },
+        {
+          "name": "夜醒次数",
+          "type": "number"
+        },
+        {
+          "name": "年龄（岁）",
+          "type": "number"
+        },
+        {
+          "name": "心率（/分钟）",
+          "type": "number"
+        },
+        {
+          "name": "性别",
+          "type": "select"
+        },
+        {
+          "name": "时间",
+          "type": "title"
+        },
+        {
+          "name": "杯子容积",
+          "type": "select"
+        },
+        {
+          "name": "步数",
+          "type": "number"
+        },
+        {
+          "name": "疫苗接种",
+          "type": "multi_select"
+        },
+        {
+          "name": "睡眠时间",
+          "type": "date"
+        },
+        {
+          "name": "血型",
+          "type": "select"
+        },
+        {
+          "name": "记录时间",
+          "type": "date"
+        },
+        {
+          "name": "起床时间",
+          "type": "date"
+        },
+        {
+          "name": "身高（厘米）",
+          "type": "number"
+        },
+        {
+          "name": "运动时长",
+          "type": "number"
+        },
+        {
+          "name": "饮水几杯",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "美食记录",
+      "domain": "健康",
+      "directFieldCount": 37,
+      "fields": [
+        {
+          "name": "主油脂",
+          "type": "select"
+        },
+        {
+          "name": "主菜",
+          "type": "select"
+        },
+        {
+          "name": "主菜热量",
+          "type": "number"
+        },
+        {
+          "name": "主菜用量",
+          "type": "number"
+        },
+        {
+          "name": "主菜碳水",
+          "type": "number"
+        },
+        {
+          "name": "主菜脂肪",
+          "type": "number"
+        },
+        {
+          "name": "主菜蛋白",
+          "type": "number"
+        },
+        {
+          "name": "其他/配料",
+          "type": "multi_select"
+        },
+        {
+          "name": "其他热量",
+          "type": "number"
+        },
+        {
+          "name": "其他用量",
+          "type": "number"
+        },
+        {
+          "name": "其他碳水",
+          "type": "number"
+        },
+        {
+          "name": "其他脂肪",
+          "type": "number"
+        },
+        {
+          "name": "其他蛋白",
+          "type": "number"
+        },
+        {
+          "name": "副菜",
+          "type": "select"
+        },
+        {
+          "name": "副菜热量",
+          "type": "number"
+        },
+        {
+          "name": "副菜用量",
+          "type": "number"
+        },
+        {
+          "name": "副菜碳水",
+          "type": "number"
+        },
+        {
+          "name": "副菜脂肪",
+          "type": "number"
+        },
+        {
+          "name": "副菜蛋白",
+          "type": "number"
+        },
+        {
+          "name": "时间",
+          "type": "date"
+        },
+        {
+          "name": "标签",
+          "type": "multi_select"
+        },
+        {
+          "name": "油脂热量",
+          "type": "number"
+        },
+        {
+          "name": "油脂用量",
+          "type": "number"
+        },
+        {
+          "name": "油脂碳水",
+          "type": "number"
+        },
+        {
+          "name": "油脂脂肪",
+          "type": "number"
+        },
+        {
+          "name": "油脂蛋白",
+          "type": "number"
+        },
+        {
+          "name": "盐用量",
+          "type": "number"
+        },
+        {
+          "name": "简介",
+          "type": "multi_select"
+        },
+        {
+          "name": "类型",
+          "type": "multi_select"
+        },
+        {
+          "name": "糖用量",
+          "type": "number"
+        },
+        {
+          "name": "美食",
+          "type": "title"
+        },
+        {
+          "name": "配菜",
+          "type": "select"
+        },
+        {
+          "name": "配菜热量",
+          "type": "number"
+        },
+        {
+          "name": "配菜用量",
+          "type": "number"
+        },
+        {
+          "name": "配菜碳水",
+          "type": "number"
+        },
+        {
+          "name": "配菜脂肪",
+          "type": "number"
+        },
+        {
+          "name": "配菜蛋白",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "就医跟踪",
+      "domain": "健康",
+      "directFieldCount": 20,
+      "fields": [
+        {
+          "name": "入账状态",
+          "type": "status"
+        },
+        {
+          "name": "几天后复查",
+          "type": "number"
+        },
+        {
+          "name": "医保报销",
+          "type": "number"
+        },
+        {
+          "name": "医院名称",
+          "type": "select"
+        },
+        {
+          "name": "实际花费",
+          "type": "number"
+        },
+        {
+          "name": "就诊日期",
+          "type": "date"
+        },
+        {
+          "name": "就诊次数",
+          "type": "number"
+        },
+        {
+          "name": "康复日期",
+          "type": "date"
+        },
+        {
+          "name": "总花费",
+          "type": "number"
+        },
+        {
+          "name": "挂号医生",
+          "type": "select"
+        },
+        {
+          "name": "治疗方案",
+          "type": "rich_text"
+        },
+        {
+          "name": "治疗满意度",
+          "type": "number"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "疾病",
+          "type": "title"
+        },
+        {
+          "name": "疾病严重程度",
+          "type": "select"
+        },
+        {
+          "name": "疾病诊断结果",
+          "type": "rich_text"
+        },
+        {
+          "name": "症状描述",
+          "type": "multi_select"
+        },
+        {
+          "name": "联系方式",
+          "type": "rich_text"
+        },
+        {
+          "name": "药物清单",
+          "type": "multi_select"
+        },
+        {
+          "name": "选择科室",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "事项跟踪",
+      "domain": "其他",
+      "directFieldCount": 6,
+      "fields": [
+        {
+          "name": "小提示",
+          "type": "select"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "跟踪事项",
+          "type": "title"
+        },
+        {
+          "name": "跟踪开始日期",
+          "type": "date"
+        },
+        {
+          "name": "间隔天数",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "日常打卡",
+      "domain": "习惯",
+      "directFieldCount": 14,
+      "fields": [
+        {
+          "name": "Fri",
+          "type": "checkbox"
+        },
+        {
+          "name": "Mon",
+          "type": "checkbox"
+        },
+        {
+          "name": "Sat",
+          "type": "checkbox"
+        },
+        {
+          "name": "Sun",
+          "type": "checkbox"
+        },
+        {
+          "name": "Thurs",
+          "type": "checkbox"
+        },
+        {
+          "name": "Tues",
+          "type": "checkbox"
+        },
+        {
+          "name": "Wed",
+          "type": "checkbox"
+        },
+        {
+          "name": "习惯",
+          "type": "title"
+        },
+        {
+          "name": "创建日期",
+          "type": "date"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "背景符号",
+          "type": "select"
+        },
+        {
+          "name": "进度条长度",
+          "type": "select"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "次数打卡",
+      "domain": "习惯",
+      "directFieldCount": 25,
+      "fields": [
+        {
+          "name": "Date",
+          "type": "date"
+        },
+        {
+          "name": "主题",
+          "type": "title"
+        },
+        {
+          "name": "主题显示",
+          "type": "select"
+        },
+        {
+          "name": "任务时长",
+          "type": "number"
+        },
+        {
+          "name": "奖励",
+          "type": "select"
+        },
+        {
+          "name": "年周打卡符号",
+          "type": "select"
+        },
+        {
+          "name": "年月周打卡颜色",
+          "type": "select"
+        },
+        {
+          "name": "年月打卡符号",
+          "type": "select"
+        },
+        {
+          "name": "开始打卡日期",
+          "type": "date"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "待打卡字体",
+          "type": "select"
+        },
+        {
+          "name": "待打卡背景",
+          "type": "select"
+        },
+        {
+          "name": "打卡1次字体",
+          "type": "select"
+        },
+        {
+          "name": "打卡1次背景",
+          "type": "select"
+        },
+        {
+          "name": "打卡2次字体",
+          "type": "select"
+        },
+        {
+          "name": "打卡2次背景",
+          "type": "select"
+        },
+        {
+          "name": "打卡图片",
+          "type": "files"
+        },
+        {
+          "name": "打卡字体",
+          "type": "select"
+        },
+        {
+          "name": "打卡截止日期",
+          "type": "date"
+        },
+        {
+          "name": "打卡符号（简）",
+          "type": "select"
+        },
+        {
+          "name": "目标次数",
+          "type": "number"
+        },
+        {
+          "name": "背景字体",
+          "type": "select"
+        },
+        {
+          "name": "背景符号（简)",
+          "type": "select"
+        },
+        {
+          "name": "表头字体",
+          "type": "select"
+        },
+        {
+          "name": "表头背景",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "打卡记录",
+      "domain": "习惯",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "Dateone",
+          "type": "date"
+        },
+        {
+          "name": "打卡记录",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "月度展示",
+      "domain": "习惯",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "日期",
+          "type": "title"
+        },
+        {
+          "name": "月份",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "习惯分类",
+      "domain": "习惯",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "知识类型",
+      "domain": "知识",
+      "directFieldCount": 10,
+      "fields": [
+        {
+          "name": "创建时间",
+          "type": "date"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "备注",
+          "type": "select"
+        },
+        {
+          "name": "标签",
+          "type": "multi_select"
+        },
+        {
+          "name": "标签控制",
+          "type": "multi_select"
+        },
+        {
+          "name": "知识归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        },
+        {
+          "name": "预书籍个数",
+          "type": "number"
+        },
+        {
+          "name": "预资源收集",
+          "type": "number"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "兴趣学习",
+      "domain": "知识",
+      "directFieldCount": 7,
+      "fields": [
+        {
+          "name": "完成日期",
+          "type": "date"
+        },
+        {
+          "name": "开始日期",
+          "type": "date"
+        },
+        {
+          "name": "归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "时间目标",
+          "type": "number"
+        },
+        {
+          "name": "笔记目标",
+          "type": "number"
+        },
+        {
+          "name": "计划目标",
+          "type": "number"
+        },
+        {
+          "name": "课题",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "学习笔记",
+      "domain": "知识",
+      "directFieldCount": 11,
+      "fields": [
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "专注笔记",
+          "type": "title"
+        },
+        {
+          "name": "任务建立",
+          "type": "status"
+        },
+        {
+          "name": "创建时间",
+          "type": "date"
+        },
+        {
+          "name": "开始专注时间",
+          "type": "date"
+        },
+        {
+          "name": "来源",
+          "type": "select"
+        },
+        {
+          "name": "标签",
+          "type": "multi_select"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "结束专注时间",
+          "type": "date"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "书籍阅读",
+      "domain": "知识",
+      "directFieldCount": 14,
+      "fields": [
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "书籍名称",
+          "type": "title"
+        },
+        {
+          "name": "书籍评分",
+          "type": "number"
+        },
+        {
+          "name": "书籍页数",
+          "type": "number"
+        },
+        {
+          "name": "二级类别",
+          "type": "select"
+        },
+        {
+          "name": "作者",
+          "type": "select"
+        },
+        {
+          "name": "备注日期",
+          "type": "date"
+        },
+        {
+          "name": "已阅读页数",
+          "type": "number"
+        },
+        {
+          "name": "开始时间",
+          "type": "date"
+        },
+        {
+          "name": "标签关键词",
+          "type": "multi_select"
+        },
+        {
+          "name": "读完时间",
+          "type": "date"
+        },
+        {
+          "name": "阅读状态",
+          "type": "status"
+        },
+        {
+          "name": "阅读用时",
+          "type": "number"
+        },
+        {
+          "name": "预笔记个数",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "书籍笔记",
+      "domain": "知识",
+      "directFieldCount": 7,
+      "fields": [
+        {
+          "name": "URL",
+          "type": "url"
+        },
+        {
+          "name": "备注日期",
+          "type": "date"
+        },
+        {
+          "name": "日期",
+          "type": "date"
+        },
+        {
+          "name": "来源",
+          "type": "status"
+        },
+        {
+          "name": "标签",
+          "type": "select"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "记录主题",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "支出分类",
+      "domain": "财务",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "类型",
+          "type": "title"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "收入事项",
+      "domain": "财务",
+      "directFieldCount": 8,
+      "fields": [
+        {
+          "name": "事项",
+          "type": "title"
+        },
+        {
+          "name": "入账时间",
+          "type": "date"
+        },
+        {
+          "name": "原金额",
+          "type": "number"
+        },
+        {
+          "name": "备注日期",
+          "type": "date"
+        },
+        {
+          "name": "币种选择",
+          "type": "select"
+        },
+        {
+          "name": "描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "收入金额",
+          "type": "number"
+        },
+        {
+          "name": "汇率",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "支出事项",
+      "domain": "财务",
+      "directFieldCount": 9,
+      "fields": [
+        {
+          "name": "事项",
+          "type": "title"
+        },
+        {
+          "name": "入账时间",
+          "type": "date"
+        },
+        {
+          "name": "原金额",
+          "type": "number"
+        },
+        {
+          "name": "备注日期",
+          "type": "date"
+        },
+        {
+          "name": "币种",
+          "type": "select"
+        },
+        {
+          "name": "描述",
+          "type": "rich_text"
+        },
+        {
+          "name": "支出金额",
+          "type": "number"
+        },
+        {
+          "name": "汇率",
+          "type": "number"
+        },
+        {
+          "name": "金额",
+          "type": "rich_text"
+        }
+      ]
+    },
+    {
+      "name": "收入分类",
+      "domain": "财务",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "类型",
+          "type": "title"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "收支账户",
+      "domain": "财务",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "账户",
+          "type": "title"
+        },
+        {
+          "name": "起始金额",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "时间监管",
+      "domain": "复盘监管",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "开始监管日期",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "知识监管",
+      "domain": "知识",
+      "directFieldCount": 2,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "开始监管日期",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "人际监管",
+      "domain": "人际",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "习惯监管",
+      "domain": "习惯",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "财务监管",
+      "domain": "财务",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "旅游监管",
+      "domain": "旅游",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "家庭监管",
+      "domain": "复盘监管",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "影视监管",
+      "domain": "影视",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "每日复盘",
+      "domain": "复盘监管",
+      "directFieldCount": 9,
+      "fields": [
+        {
+          "name": "Name",
+          "type": "title"
+        },
+        {
+          "name": "备注",
+          "type": "select"
+        },
+        {
+          "name": "已归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "情绪",
+          "type": "select"
+        },
+        {
+          "name": "日期",
+          "type": "date"
+        },
+        {
+          "name": "洞察内容",
+          "type": "rich_text"
+        },
+        {
+          "name": "背景填充符号",
+          "type": "select"
+        },
+        {
+          "name": "进度条长度",
+          "type": "number"
+        },
+        {
+          "name": "进度符号",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "每周复盘",
+      "domain": "复盘监管",
+      "directFieldCount": 4,
+      "fields": [
+        {
+          "name": "Name",
+          "type": "title"
+        },
+        {
+          "name": "已归档",
+          "type": "checkbox"
+        },
+        {
+          "name": "生成日期",
+          "type": "date"
+        },
+        {
+          "name": "颜色",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "每月复盘",
+      "domain": "复盘监管",
+      "directFieldCount": 3,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "复盘日期",
+          "type": "date"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        }
+      ]
+    },
+    {
+      "name": "复盘监管",
+      "domain": "复盘监管",
+      "directFieldCount": 1,
+      "fields": [
+        {
+          "name": "名称",
+          "type": "title"
+        }
+      ]
+    },
+    {
+      "name": "第二大脑",
+      "domain": "知识",
+      "directFieldCount": 19,
+      "fields": [
+        {
+          "name": "BMI变异系数对照",
+          "type": "number"
+        },
+        {
+          "name": "BMI平均值对照",
+          "type": "number"
+        },
+        {
+          "name": "BMI标准差对照",
+          "type": "number"
+        },
+        {
+          "name": "专注时长对照",
+          "type": "number"
+        },
+        {
+          "name": "书籍笔记对照",
+          "type": "number"
+        },
+        {
+          "name": "任务完成对照",
+          "type": "number"
+        },
+        {
+          "name": "任务总数对照",
+          "type": "number"
+        },
+        {
+          "name": "名称",
+          "type": "title"
+        },
+        {
+          "name": "学习笔记计算对照",
+          "type": "number"
+        },
+        {
+          "name": "已兑换积分对照",
+          "type": "number"
+        },
+        {
+          "name": "已阅读书籍数对照",
+          "type": "number"
+        },
+        {
+          "name": "当前元气值对照",
+          "type": "number"
+        },
+        {
+          "name": "技术归档数对照",
+          "type": "number"
+        },
+        {
+          "name": "日常打卡数对照",
+          "type": "number"
+        },
+        {
+          "name": "次数打卡数对照",
+          "type": "number"
+        },
+        {
+          "name": "财务余额对照",
+          "type": "number"
+        },
+        {
+          "name": "资源收集对照",
+          "type": "number"
+        },
+        {
+          "name": "项目完成对照",
+          "type": "number"
+        },
+        {
+          "name": "项目总数对照",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "创作计划",
+      "domain": "创作",
+      "directFieldCount": 20,
+      "fields": [
+        {
+          "name": "七天后阅读量",
+          "type": "number"
+        },
+        {
+          "name": "内容分类",
+          "type": "select"
+        },
+        {
+          "name": "千帆投流",
+          "type": "status"
+        },
+        {
+          "name": "商品笔记",
+          "type": "status"
+        },
+        {
+          "name": "图片标题",
+          "type": "rich_text"
+        },
+        {
+          "name": "完成日期",
+          "type": "date"
+        },
+        {
+          "name": "文件和媒体",
+          "type": "files"
+        },
+        {
+          "name": "文字标题",
+          "type": "rich_text"
+        },
+        {
+          "name": "文本",
+          "type": "rich_text"
+        },
+        {
+          "name": "有什么价值",
+          "type": "rich_text"
+        },
+        {
+          "name": "标签词",
+          "type": "multi_select"
+        },
+        {
+          "name": "核心观点",
+          "type": "rich_text"
+        },
+        {
+          "name": "热度评级",
+          "type": "select"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "目标用户",
+          "type": "select"
+        },
+        {
+          "name": "矩阵平台",
+          "type": "multi_select"
+        },
+        {
+          "name": "薯条加热",
+          "type": "status"
+        },
+        {
+          "name": "计划日期",
+          "type": "date"
+        },
+        {
+          "name": "选题",
+          "type": "title"
+        },
+        {
+          "name": "预计流向",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "选题收集",
+      "domain": "创作",
+      "directFieldCount": 12,
+      "fields": [
+        {
+          "name": "主要内容",
+          "type": "rich_text"
+        },
+        {
+          "name": "关键词",
+          "type": "multi_select"
+        },
+        {
+          "name": "参考价值",
+          "type": "multi_select"
+        },
+        {
+          "name": "参考链接",
+          "type": "url"
+        },
+        {
+          "name": "备注",
+          "type": "rich_text"
+        },
+        {
+          "name": "小红书标题",
+          "type": "rich_text"
+        },
+        {
+          "name": "延伸思路",
+          "type": "rich_text"
+        },
+        {
+          "name": "来源",
+          "type": "select"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "选题标题",
+          "type": "title"
+        },
+        {
+          "name": "选题类型",
+          "type": "select"
+        },
+        {
+          "name": "预计流向",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "name": "心愿奖励",
+      "domain": "生活",
+      "directFieldCount": 8,
+      "fields": [
+        {
+          "name": "兑换日期",
+          "type": "date"
+        },
+        {
+          "name": "兑换积分",
+          "type": "number"
+        },
+        {
+          "name": "奖励名称",
+          "type": "title"
+        },
+        {
+          "name": "奖励类型",
+          "type": "select"
+        },
+        {
+          "name": "奖励链接",
+          "type": "url"
+        },
+        {
+          "name": "完成反馈",
+          "type": "rich_text"
+        },
+        {
+          "name": "截止日期",
+          "type": "date"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        }
+      ]
+    },
+    {
+      "name": "助手管理",
+      "domain": "生活",
+      "directFieldCount": 12,
+      "fields": [
+        {
+          "name": "主要功能",
+          "type": "rich_text"
+        },
+        {
+          "name": "优势特点",
+          "type": "rich_text"
+        },
+        {
+          "name": "使用场景",
+          "type": "multi_select"
+        },
+        {
+          "name": "使用技巧",
+          "type": "rich_text"
+        },
+        {
+          "name": "使用频率",
+          "type": "select"
+        },
+        {
+          "name": "助手名称",
+          "type": "title"
+        },
+        {
+          "name": "助手类型",
+          "type": "select"
+        },
+        {
+          "name": "备注说明",
+          "type": "rich_text"
+        },
+        {
+          "name": "成本信息",
+          "type": "rich_text"
+        },
+        {
+          "name": "推荐度",
+          "type": "select"
+        },
+        {
+          "name": "状态",
+          "type": "status"
+        },
+        {
+          "name": "访问方式",
+          "type": "url"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion Life System"
+  short_description: "Use the local Notion schema and CLI to read or write pages safely."
+  default_prompt: "Use my Notion life system schema and ntn CLI workflow to decide where information belongs, read target pages, and write only when I explicitly ask."
